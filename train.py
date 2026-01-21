@@ -75,7 +75,7 @@ model = model.to(device)
 loss_func = nn.CrossEntropyLoss()
 optimizator = optim.Adam(params=model.parameters(), lr=0.001)
 
-epoch = 2
+epoch = 7
 model.train()
 
 
@@ -127,4 +127,5 @@ print(f"ТЕСТОВЫЕ РЕЗУЛЬТАТЫ:")
 print(f"{'='*50}")
 print(f"Правильно классифицировано: {test_correct}/{test_total}")
 print(f"Точность (Accuracy): {accuracy:.2f}%")
+
 print(f"{'='*50}")
